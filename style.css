@@ -1,0 +1,62 @@
+@media screen and (min-width: 720px) {
+  .example {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .example {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+.example {
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 720px) {
+  .example1 {
+    font-size: 53px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .example1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+.example1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.Footer {
+  background: #fef6f2;
+}
+.Fontt {
+  font-size: 20px;
+  text-align: justify;
+}
+.Fontt2 {
+  font-size: 20px;
+}
+.Fontt3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+}
+#Pendaftaran {
+  background-image: url(img/Line\ Accent.png);
+}
+.button5 {
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 33.5px;
+  background: #faaa42;
+  width: 423px;
+  height: 85.17px;
+  left: 508px;
+  top: 399.92px;
+}
