@@ -134,4 +134,7 @@
 }
 .Pendaftaran {
   background-image: url(img/Line\ Accent.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
