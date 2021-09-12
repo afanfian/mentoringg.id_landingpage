@@ -1,0 +1,703 @@
+/* || VARIABLES */
+:root {
+  --primary: #faaa42;
+  --primary-hover: #f79d28;
+  --heading: #093446;
+}
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* || FONTS */
+h1 {
+  color: var(--heading);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4 {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+/* || BASE STYLES */
+header {
+  background: #fef6f2 url(../images/hero-background.png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 34px;
+  background-color: var(--primary);
+  color: white !important;
+  border-radius: 33.5px;
+}
+
+.button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* || DESKTOP STYLES */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  margin: 0 100px !important;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* | NAVBAR */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  transition: 0.4s;
+  padding: 30px 100px;
+  align-items: center;
+}
+
+nav.fade-scroll {
+  padding: 10px 100px;
+  background: white;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.site-nav a {
+  color: var(--heading);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.site-nav img {
+  width: 60px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a {
+  margin-right: 45px;
+}
+
+.nav-right > * {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(45px * var(--tw-space-x-reverse));
+  margin-left: calc(45px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* | HERO */
+.hero {
+  padding-top: 200px;
+  margin-top: 3rem;
+}
+.hero-text {
+  grid-column: 1 / 7;
+}
+
+.leading {
+  width: 350px;
+  font-size: 24px;
+  margin-top: 25px;
+  color: #e96754;
+}
+
+.hero-text > .button {
+  font-size: 27px;
+  font-weight: 600;
+  margin-top: 56px;
+  width: 365px;
+  text-align: center;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.04);
+  padding: 14px 0px;
+}
+
+.hero-image {
+  grid-column: 7 / 13;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* | ABOUT */
+
+.about {
+  background: white url(../images/bg-about.png) no-repeat center center;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 25rem;
+}
+
+.about h2 {
+  font-size: 48px;
+  margin-bottom: 34px;
+}
+
+.about p {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 24px;
+  color: #637582;
+}
+
+/* || MOBILE MEDIUM STYLES */
+@media screen and (max-width: 576px) {
+  header {
+    height: 450px;
+  }
+
+  .button {
+    padding: 5px 9px;
+  }
+  .grid {
+    margin: 0 24px !important;
+  }
+
+  /* |  HEADER*/
+  .site-nav {
+    padding: 17px 30px !important;
+  }
+
+  .nav-left a img {
+    width: 31px !important;
+  }
+
+  .nav-right a {
+    font-size: 8px !important;
+  }
+
+  .nav-right > * {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(14px * var(--tw-space-x-reverse));
+    margin-left: calc(14px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .hero {
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+    place-content: center;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    font-size: 25px !important;
+  }
+
+  .leading {
+    width: 267px;
+    margin: 5px auto;
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .hero-text > .button {
+    width: 150px;
+    font-size: 10px;
+    margin: 27px auto;
+    padding: 8px 0 !important;
+    margin-bottom: 0 !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image {
+    place-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-image img {
+    margin: 0;
+    place-content: center;
+    width: 220px;
+    height: 132.84px;
+  }
+
+  /* | ABOUT */
+
+  .about {
+    height: 15rem;
+  }
+
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    width: 300px !important;
+    font-size: 15px !important;
+  }
+  .social {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+}
+
+/* || TABLETS STYLES */
+@media screen and (max-width: 768px) {
+  .site-nav a:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+  .nav-left a:nth-child(2),
+  .nav-left a:nth-child(3) {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text {
+    grid-column: 1 / 7;
+  }
+  .hero-text > .button {
+    width: 250px;
+    font-size: 15px;
+    margin: 27px auto;
+    margin-bottom: 0 !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+/* || LAPTOP STYLES */
+@media screen and (max-width: 1024px) {
+  .grid {
+    margin: 0 50px;
+  }
+
+  .site-nav a {
+    font-size: 18px;
+  }
+
+  .nav-left {
+    grid-column: 2 / 7;
+  }
+
+  .hero-text {
+    grid-column: 1 / 7;
+  }
+
+  .hero-image {
+    align-self: flex-end;
+  }
+
+  .about p {
+    font-size: 18px;
+    width: 700px;
+  }
+}
+
+/* MAS FIAN */
+/* .konten p { */
+/*   color: var(--heading); */
+/* } */
+/*Kenapa Pilih*/
+@media screen and (min-width: 720px) {
+  .example {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .example {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+.example {
+  font-family: "Poppins", sans-serif;
+}
+/*Mentoringg.id*/
+@media screen and (min-width: 720px) {
+  .example1 {
+    font-size: 53px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .example1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+.example1 {
+  font-family: "Poppins", sans-serif;
+}
+/*Tunggu apalagi langgangan sekarang*/
+@media screen and (min-width: 720px) {
+  .example2 {
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .example2 {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    font-size: 40px;
+  }
+}
+.example2 {
+  font-family: "Poppins", sans-serif;
+}
+/*Image Konten*/
+@media screen and (min-width: 720px) {
+  .imgkntn {
+    padding-left: 5px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .imgkntn {
+    text-align: center;
+  }
+}
+
+/*Tombol Daftar*/
+@media screen and (min-width: 720px) {
+  .example3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .example3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 33.5px;
+    width: 200px;
+    height: 85.17px;
+    left: 200px;
+    top: 200px;
+  }
+}
+.example3 {
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 720px) {
+  .btndaftar {
+    width: 423px;
+    height: 85.17px;
+    left: 508px;
+    top: 399.92px;
+    background: #faaa42;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 33.5px;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btndaftar:hover {
+    background-color: var(--primary-hover);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .btndaftar {
+    width: 200px;
+    height: 85.17px;
+    left: 508px;
+    top: 399.92px;
+    background: #faaa42;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 33.5px;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*Footer*/
+@media screen and (max-width: 1080px) {
+  .logofooter {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .flex-container-footerfix {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+  }
+}
+
+.social {
+  padding-left: 60px;
+}
+.btndaftar {
+  font-family: "Poppins", sans-serif;
+  color: white !important;
+}
+.Footer {
+  background: #fef6f2;
+}
+.Fontt {
+  font-size: 20px;
+  text-align: justify;
+}
+.Fontt2 {
+  font-size: 20px;
+}
+.Fontt3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+}
+.Pendaftaran {
+  background-image: url(../images/COBA-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+/* Mencoba */
+.flex-container-footerfix {
+  display: flex;
+}
+
+.flex-container-footerfix > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+/* MAS AKMAL */
+/* AKMAL */
+/* Section Fasilitas */
+section.fasilitas {
+  padding-top: 80px;
+  margin-top: -80px;
+  padding-bottom: 90px;
+}
+
+section.fasilitas h2 {
+  font-size: 50px;
+  color: #093446;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+section.fasilitas .ket-fasilitas {
+  font-family: "Poppins", sans-serif;
+  color: #093446;
+  font-weight: 500;
+  font-size: 1.74rem;
+}
+
+section.paket-belajar {
+  font-family: "Poppins", sans-serif;
+  background-color: #fef6f3;
+  margin-top: -80px;
+  padding-top: 80px;
+  padding-bottom: 47px;
+  color: #616161;
+}
+
+section.paket-belajar h2 {
+  font-size: 50px;
+  color: #093446;
+  font-weight: 600;
+  margin-bottom: 78px;
+}
+
+section.paket-belajar .judul-paket-belajar {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+section.paket-belajar .lead-paket-belajar {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(97, 97, 97, 0.8);
+  margin-bottom: 24px;
+}
+
+section.paket-belajar li {
+  line-height: 35px;
+}
+section.paket-belajar li::before {
+  content: "\2713";
+  padding-right: 13px;
+}
+
+section.paket-belajar p.harga-asli {
+  color: #ff5858;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through 1.5px;
+  margin-bottom: 0;
+}
+
+section.paket-belajar p.harga-diskon {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+section.paket-belajar .btn-primary {
+  background-color: #a068fb;
+  border-radius: 15px;
+  border: none;
+}
+
+section.paket-belajar .btn-primary:hover {
+  background-color: #844ddd;
+}
+
+section.paket-belajar .card {
+  border: 4px solid transparent;
+  border-radius: 18px;
+}
+
+section.paket-belajar .card:hover {
+  cursor: pointer;
+  border: 4px solid #a068fb;
+  transition: all 0.5s;
+}
+
+section.paket-belajar .card-body {
+  padding: 21px 34px 31px;
+}
+
+/* Mobile Medium <==576px*/
+@media screen and (max-width: 576px) {
+  section.fasilitas h2 {
+    font-size: 2.25rem !important;
+  }
+
+  section.fasilitas .img-fasilitas {
+    width: 150px !important;
+  }
+
+  section.fasilitas .ket-fasilitas {
+    font-size: 1rem !important;
+  }
+
+  section.paket-belajar h2 {
+    font-size: 2.25rem !important;
+  }
+  section.paket-belajar .judul-paket-belajar {
+    font-size: 1.25rem;
+  }
+  section.paket-belajar .lead-paket-belajar {
+    font-size: 1rem;
+  }
+  section.paket-belajar li {
+    font-size: 0.9rem;
+  }
+  section.paket-belajar .harga-asli {
+    font-size: 1.125rem;
+  }
+  section.paket-belajar .harga-diskon {
+    font-size: 1.75rem;
+  }
+}
+
+/* Tablet <==768px*/
+@media screen and (max-width: 768px) {
+  section.fasilitas .img-fasilitas {
+    width: 250px;
+  }
+  section.fasilitas .ket-fasilitas {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  section.paket-belajar .row {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+}
+
+/* Laptop <== 1024px*/
+@media screen and (max-width: 1024px) {
+  section.fasilitas .img-fasilitas {
+    max-width: 300px;
+  }
+}
+
+/* FAB CS Whatsapp */
+/* .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+} */

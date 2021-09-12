@@ -2,41 +2,222 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <!--Awal Bootstrap Icon-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <!--Akhir Bootstrap Icon-->
-    <!--Awal font Awesome-->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!--Akhir font Awesome-->
-    <!--My Coding CSS-->
-    <link rel="stylesheet" href="style.css" />
-    <!--AkhirMy Coding CSS-->
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Belajar Online Tanpa Ribet!" />
+    <!-- NAMBAHIN LINK CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" media="all" />
+    <!--Text Awesome-->
+    <link rel="stylesheet" href="styles/font-awesome.min.css" />
+    <!-- POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <title>Mentoringg.id - Belajar Online Tanpa Ribet</title>
   </head>
   <body>
+    <header id="welcome">
+      <!-- NAVIGATION BAR -->
+      <nav class="site-nav" id="navbar">
+        <div class="nav-left">
+          <a href="#welcome">
+            <img id="logo-nav" src="images/Logo.png" alt="Logo Mentoringg.id" />
+          </a>
+          <a href="#fasilitas">Fasilitas</a>
+          <a href="#paketBelajar">Paket belajar</a>
+        </div>
+        <div class="nav-right">
+          <a href="https://app.mentoringg.id/#/">Masuk</a>
+          <a href="https://app.mentoringg.id/#/" class="button">Daftar</a>
+        </div>
+      </nav>
+      <!-- HERO SECTION -->
+      <section class="hero grid" id="welcome">
+        <div class="hero-text">
+          <h1>
+            Belajar Online <br />
+            Tanpa Ribet
+          </h1>
+
+          <p class="leading">Akses ke banyak materi dan diskusi langsung dengan mahasiswa</p>
+          <a href="https://app.mentoringg.id/#/" class="button">Mulai belajar hari ini!</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/illust-hero.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <!-- ABOUT US SECTION -->
+    <section class="about" id="aboutUs">
+      <h2>Mentoringg.id itu apa sih?</h2>
+      <p>Mentoringg.id merupakan Startup EduTech yang menyediakan program persiapan menghadapi ujian SBMPTN dan kedinasan bagi para siswa kelas 10-12 dan gap year</p>
+    </section>
+
+    <!-- | MAS FIAN -->
     <!--Awal Konten -->
     <section class="Konten py-5" id="Konten">
-      <div class="container-lg py-5">
+      <div class="container-lg">
         <div class="row">
           <div class="col-md-5">
             <br /><br /><br />
             <p class="example fw-bold">Kenapa Pilih</p>
-            <p class="example1 fw-bold">Mentorigg.id</p>
+            <p class="example1 fw-bold">Mentoringg.id</p>
             <br /><br />
-            <img src="img/Mascott-02.png" width="300" alt="" />
+            <img src="images/Mascott-02.png" width="300" alt="" />
           </div>
-          <div class="col-md-7">
-            <img src="img/WHY-01.png" width="342" alt="" />
-            <img src="img/WHY-02.png" width="342" alt="" />
-            <img src="img/WHY-03.png" width="342" alt="" />
-            <img src="img/WHY-04.png" width="342" alt="" />
+          <div class="imgkntn col-md-7 justify-content-center">
+            <img src="images/WHY-01.png" width="342" alt="" />
+            <img src="images/WHY-02.png" width="342" alt="" />
+            <img src="images/WHY-03.png" width="342" alt="" />
+            <img src="images/WHY-04.png" width="342" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!--Akhir Konten -->
+    <!-- | MAS AKMAL -->
+    <!-- FASILITAS -->
+
+    <section class="fasilitas" id="fasilitas">
+      <div class="container py-5">
+        <h2 class="text-center">Fasilitas</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-4 d-flex d-lg-block align-items-center mb-3">
+            <div class="flex-shrink-0">
+              <img src="images/fimg1.png" alt class="img-fasilitas" />
+            </div>
+            <div class="flex-grow-1">
+              <p class="ket-fasilitas text-start text-lg-center ms-3">Mentoring, Sharing, dan Motivasi dari Mahasiswa Berprestasi</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex d-lg-block align-items-center mb-3">
+            <div class="flex-shrink-0 order-2">
+              <img src="images/fimg2.png" alt class="img-fasilitas" />
+            </div>
+            <div class="flex-grow-1">
+              <p class="ket-fasilitas text-end text-lg-center me-3">Info ter-update terkait penerimaan mahasiswa baru dan beasiswa</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex d-lg-block align-items-center mb-3">
+            <div class="flex-shrink-0">
+              <img src="images/fimg3.png" alt class="img-fasilitas" />
+            </div>
+            <div class="flex-grow-1">
+              <p class="ket-fasilitas text-start text-lg-center ms-3">Bank soal SBMPTN, Kedinasan, dan Ujian Mandiri</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex d-lg-block align-items-center mb-3">
+            <div class="flex-shrink-0 order-2">
+              <img src="images/fimg4.png" alt class="img-fasilitas" />
+            </div>
+            <div class="flex-grow-1">
+              <p class="ket-fasilitas text-end text-lg-center me-3">Study grup yang aktif</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex d-lg-block align-items-center mb-3">
+            <div class="flex-shrink-0">
+              <img src="images/fimg5.png" alt class="img-fasilitas" />
+            </div>
+            <div class="flex-grow-1">
+              <p class="ket-fasilitas text-start text-lg-center ms-3">Quiz setiap akhir bulan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAKET BELAJAR -->
+
+    <section class="paket-belajar" id="paketBelajar">
+      <div class="container py-5">
+        <h2 class="text-center">Paket Belajar</h2>
+        <div class="row flex-nowrap">
+          <!-- card 1 -->
+
+          <div class="col-11 col-md-7 col-lg-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="text-center">
+                  <h5 class="judul-paket-belajar">KEDINASAN</h5>
+                  <p class="lead-paket-belajar">Hingga akhir semester</p>
+                </div>
+                <ul class="list-unstyled">
+                  <li>30x Tryout SKD (TIU + TKP + TWK)</li>
+                  <li>20x Tryout TPA</li>
+                  <li>10x Bonus Tryout TPS</li>
+                  <li>Rangkuman materi</li>
+                  <li>Google Classroom</li>
+                  <li>Info update</li>
+                  <li>Webinar</li>
+                </ul>
+                <p class="harga-asli">Rp. 500.000,00</p>
+                <p class="harga-diskon">Rp. 179.000,00</p>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-primary btn-lg">LANGGANAN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+
+          <div class="col-11 col-md-7 col-lg-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="text-center">
+                  <h5 class="judul-paket-belajar">KEDINASAN</h5>
+                  <p class="lead-paket-belajar">Hingga akhir semester</p>
+                </div>
+                <ul class="list-unstyled">
+                  <li>30x Tryout SKD (TIU + TKP + TWK)</li>
+                  <li>20x Tryout TPA</li>
+                  <li>10x Bonus Tryout TPS</li>
+                  <li>Rangkuman materi</li>
+                  <li>Google Classroom</li>
+                  <li>Info update</li>
+                  <li>Webinar</li>
+                </ul>
+                <p class="harga-asli">Rp. 500.000,00</p>
+                <p class="harga-diskon">Rp. 179.000,00</p>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-primary btn-lg">LANGGANAN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+
+          <div class="col-11 col-md-7 col-lg-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="text-center">
+                  <h5 class="judul-paket-belajar">KEDINASAN</h5>
+                  <p class="lead-paket-belajar">Hingga akhir semester</p>
+                </div>
+                <ul class="list-unstyled">
+                  <li>30x Tryout SKD (TIU + TKP + TWK)</li>
+                  <li>20x Tryout TPA</li>
+                  <li>10x Bonus Tryout TPS</li>
+                  <li>Rangkuman materi</li>
+                  <li>Google Classroom</li>
+                  <li>Info update</li>
+                  <li>Webinar</li>
+                </ul>
+                <p class="harga-asli">Rp. 500.000,00</p>
+                <p class="harga-diskon">Rp. 179.000,00</p>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-primary btn-lg">LANGGANAN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MAS FIAN -->
     <!--Awal Pendaftaran -->
     <section class="Pendaftaran py-5" id="Pendaftaran">
       <div class="row">
@@ -50,7 +231,7 @@
         </div>
         <div class="col-md-12">
           <div class="mb-3">
-            <button class="example3 btndaftar">DAFTAR</button>
+            <a href="" target="_blank" class="example3 btndaftar">DAFTAR</a>
           </div>
         </div>
       </div>
@@ -67,10 +248,7 @@
                 <br />
                 <br />
                 <br />
-                <br />
-                <br />
-                <br />
-                <img src="img/logo baru revisi-04-05 1.png" alt="" width="116px" />
+                <img src="images/logo baru revisi-04-05 1.png" class="logofooter" alt="" width="150px" />
               </div>
             </div>
           </div>
@@ -85,40 +263,33 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12">
-            <div class="mb-3">
-              <div>
-                <br /><br /><br />
-                <br />
-                <h4 class="Fontt2 fw-bold">Social</h4>
-                <br />
-                <div class="Contact-item d-flex mb-3">
-                  <div class="icon fs-4 text-success">
-                    <a href="https://www.linkedin.com/in/fianawamirymaulana/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-                  <div class="text ms-3">
-                    <h3 class="fs-5 fw-bold">LinkedIn</h3>
-                    <p class="Fontt2">Fian Awamiry Maulana</p>
-                  </div>
-                </div>
-                <div class="Contact-item d-flex mb-3">
-                  <div class="icon fs-4">
-                    <a href="https://www.instagram.com/afanfiann/" target="_blank"><i class="fab fa-instagram text-danger"></i></a>
-                  </div>
-                  <div class="text ms-3">
-                    <h3 class="fs-5 fw-bold">Instagram</h3>
-                    <p class="Fontt2">@afanfiann</p>
-                  </div>
-                </div>
-                <div class="Contact-item d-flex mb-3">
-                  <div class="icon fs-4 text-success">
-                    <a href="https://www.linkedin.com/in/fianawamirymaulana/" target="_blank"><i class="fab fa-telegram"></i></a>
-                  </div>
-                  <div class="text ms-3">
-                    <h3 class="fs-5 fw-bold">Telegram</h3>
-                    <p class="Fontt2">+6281222333444</p>
-                  </div>
-                </div>
+          <div class="col-md-3">
+            <h4 class="Fontt2 fw-bold" style="padding-top: 90px">Social</h4>
+            <div class="Contact-item d-flex mb-3">
+              <div class="icon fs-4 text-success">
+                <a href="https://www.linkedin.com/company/mentoring-id/mycompany/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5 fw-bold">Linkedin</h3>
+                <p>Mentoring.id</p>
+              </div>
+            </div>
+            <div class="Contact-item d-flex mb-3">
+              <div class="icon fs-4">
+                <a href="https://www.instagram.com/mentoringg.id" target="_blank"><i class="fab fa-instagram text-danger"></i></a>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5 fw-bold">Instagram</h3>
+                <p>@afanfiann</p>
+              </div>
+            </div>
+            <div class="Contact-item d-flex mb-3">
+              <div class="icon fs-4">
+                <a href="https://www.linkedin.com/in/fianawamirymaulana/" target="_blank"><i class="fab fa-telegram text-primary"></i></a>
+              </div>
+              <div class="text ms-3">
+                <h3 class="fs-5 fw-bold">Telegram</h3>
+                <p>+6281222333444</p>
               </div>
             </div>
           </div>
@@ -136,7 +307,7 @@
                 <br /><br /><br /><br />
                 <h3 class="Fontt2 fw-bold">Alamat</h3>
                 <br />
-                <p class="Fontt">Jalan Warung Buncit Raya No.18 (Gedung IDE, lantai 4), RT.4/RW.5, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760</p>
+                <p class="Fontt">Jalan Klenteng Sari 02, Semarang, Jawa Tengah</p>
               </div>
             </div>
           </div>
@@ -147,12 +318,80 @@
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-12">
-            <p class="m-0 text-center fw-bold">&copy; August 2021 Fian Awamiry Maulana</p>
+            <p class="m-0 text-center">&copy; August 2021 Mentoringg.id. All right reserved</p>
           </div>
         </div>
       </div>
     </div>
+    <!--Akhir Footer-->
+
+    <!--Mencoba Footer-->
+    <div class="section" style="font-family: Poppins, sans-serif; background: #fef6f2">
+      <div class="flex-container-footerfix">
+        <img class="footer-image" src="images/logo baru revisi-04-05 1.png" alt="" style="height: 170px; width: 160px; padding-top: 20px; margin-left: 200px" />
+        <div style="padding-left: 50px">
+          <p style="font-size: 20px; color: #000000; padding-bottom: 10px">About</p>
+          <p style="font-size: 20px; color: #637582; text-align: justify; width: 450px">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
+          </p>
+        </div>
+        <div>
+          <p style="font-size: 20px; color: #000000; padding-bottom: 10px">Social</p>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4 text-success">
+              <a href="https://www.linkedin.com/company/mentoring-id/mycompany/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="text ms-3">
+              <p class="fs-5" style="font-size: 20px; color: #000000">Linkedin</p>
+              <p style="font-size: 20px; color: #637582">Mentoring.id</p>
+            </div>
+          </div>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <a href="https://www.instagram.com/mentoringg.id" target="_blank"><i class="fab fa-instagram text-danger"></i></a>
+            </div>
+            <div class="text ms-3">
+              <p class="fs-5" style="font-size: 20px; color: #000000">Instagram</p>
+              <p style="font-size: 20px; color: #637582">@afanfiann</p>
+            </div>
+          </div>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <a href="https://www.linkedin.com/in/fianawamirymaulana/" target="_blank"><i class="fab fa-telegram text-primary"></i></a>
+            </div>
+            <div class="text ms-3">
+              <p class="fs-5" style="font-size: 20px; color: #000000">Telegram</p>
+              <p style="font-size: 20px; color: #637582">+6281222333444</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p style="font-size: 20px; color: #000000; padding-bottom: 10px">Alamat</p>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <a
+                href="https://www.google.com/maps/place/Jl.+Klentengsari+No.2,+Pedalangan,+Kec.+Banyumanik,+Kota+Semarang,+Jawa+Tengah+50268/@-7.058416,110.4242745,17z/data=!3m1!4b1!4m5!3m4!1s0x2e708eaacdcaa07f:0xf67d7060715eb9ee!8m2!3d-7.058416!4d110.4264632?hl=id"
+                target="_blank"
+                ><i class="fas fa-map-marker-alt text-success"></i
+              ></a>
+            </div>
+            <div class="text ms-3">
+              <p style="font-size: 20px; color: #637582; width: 250px">Jalan Klenteng Sari 02, Semarang, Jawa Tengah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a
+      href="https://api.whatsapp.com/send?phone=+6285707106490&text=Halo%2C%20saya%20butuh%20bantuan%20nih"
+      class="float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp my-float"></i>
+    </a> -->
     <!--Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="script/main.js"></script>
   </body>
 </html>
