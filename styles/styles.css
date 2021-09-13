@@ -335,6 +335,52 @@ nav.fade-scroll {
 /*   color: var(--heading); */
 /* } */
 /*Kenapa Pilih*/
+
+.social {
+  padding-left: 60px;
+}
+.btndaftar {
+  font-family: "Poppins", sans-serif;
+  color: white !important;
+}
+.Footer {
+  background: #fef6f2;
+}
+.Fontt {
+  font-size: 20px;
+  text-align: justify;
+}
+.Fontt2 {
+  font-size: 20px;
+}
+.Fontt3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+}
+.Pendaftaran {
+  background-image: url(../images/VB-mas\ ilham.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+}
+/* Mencoba */
+.footerfix {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flex-container-footerfix > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
 @media screen and (min-width: 720px) {
   .example {
     font-size: 46px;
@@ -368,18 +414,20 @@ nav.fade-scroll {
 @media screen and (min-width: 720px) {
   .example2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-style: normal;
-    font-weight: bold;
+    padding-top: 90px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (max-width: 1080px) {
   .example2 {
     justify-content: center;
     text-align: center;
-    font-weight: bold;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
+    padding-top: 300px;
+    padding-bottom: 20px;
   }
 }
 .example2 {
@@ -397,40 +445,10 @@ nav.fade-scroll {
     text-align: center;
   }
 }
-
 /*Tombol Daftar*/
 @media screen and (min-width: 720px) {
-  .example3 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .example3 {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 33.5px;
-    width: 200px;
-    height: 85.17px;
-    left: 200px;
-    top: 200px;
-  }
-}
-.example3 {
-  font-family: "Poppins", sans-serif;
-}
-@media screen and (min-width: 720px) {
   .btndaftar {
-    width: 423px;
+    width: 180px;
     height: 85.17px;
     left: 508px;
     top: 399.92px;
@@ -439,6 +457,7 @@ nav.fade-scroll {
     border-radius: 33.5px;
     font-style: normal;
     font-weight: bold;
+    font-size: 25px;
     color: white;
     margin: auto;
     display: flex;
@@ -452,8 +471,8 @@ nav.fade-scroll {
 }
 @media screen and (max-width: 1080px) {
   .btndaftar {
-    width: 200px;
-    height: 85.17px;
+    width: 150px;
+    height: 70px;
     left: 508px;
     top: 399.92px;
     background: #faaa42;
@@ -461,11 +480,23 @@ nav.fade-scroll {
     border-radius: 33.5px;
     font-style: normal;
     font-weight: bold;
+    font-size: 20px;
     color: white;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+/* Pendaftaran*/
+@media screen and (max-width: 1080px) {
+  .Pendaftaran {
+    background-image: url(../images/VB-mas\ ilham.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    height: 100vh;
   }
 }
 /*Footer*/
@@ -474,55 +505,13 @@ nav.fade-scroll {
     width: 80px;
   }
 }
+
 @media screen and (max-width: 1080px) {
-  .flex-container-footerfix {
+  .footerfix {
     display: flex;
-    flex-direction: row;
-    text-align: justify;
+    flex-direction: column;
+    padding-left: 10px;
   }
-}
-
-.social {
-  padding-left: 60px;
-}
-.btndaftar {
-  font-family: "Poppins", sans-serif;
-  color: white !important;
-}
-.Footer {
-  background: #fef6f2;
-}
-.Fontt {
-  font-size: 20px;
-  text-align: justify;
-}
-.Fontt2 {
-  font-size: 20px;
-}
-.Fontt3 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 90px;
-  text-align: center;
-}
-.Pendaftaran {
-  background-image: url(../images/COBA-1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: cover;
-}
-/* Mencoba */
-.flex-container-footerfix {
-  display: flex;
-}
-
-.flex-container-footerfix > div {
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
 }
 /* MAS AKMAL */
 /* AKMAL */
